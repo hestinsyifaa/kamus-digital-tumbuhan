@@ -1,4 +1,0 @@
-ultralytics
-joblib
-scikit-learn
-torch
