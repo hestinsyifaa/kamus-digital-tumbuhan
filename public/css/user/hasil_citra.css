@@ -1,0 +1,298 @@
+/* =========================
+   RESET
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+body{
+    text-align: center;
+    background:#f4fff5;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px 20px;
+    color:#333;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    max-width: 900px; /* ini yang bikin “lebar form” */
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   TITLE
+========================= */
+h1{
+    color:#2e7d32;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    font-size:15px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.image-box{
+    margin-bottom:25px;
+}
+
+.image-box img{
+    width:100%;
+    max-height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    border:4px solid #e8f5e9;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+/* =========================
+   RESULT BOX
+========================= */
+.result-box{
+    background:#f9fff9;
+    border:1px solid #e7f3e8;
+    border-radius:20px;
+    padding:25px;
+}
+
+/* LABEL */
+.label{
+    display:block;
+    margin-bottom:15px;
+    color:#2e7d32;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* =========================
+   PREDICTION
+========================= */
+.prediction{
+    padding:18px;
+    border-radius:16px;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.success{
+    background:#e8f5e9;
+    color:#2e7d32;
+}
+
+.danger{
+    background:#ffebee;
+    color:#d32f2f;
+}
+
+/* =========================
+   CONFIDENCE
+========================= */
+.confidence-box{
+    margin-bottom:18px;
+}
+
+.confidence-label{
+    display:block;
+    margin-bottom:8px;
+    color:#666;
+    font-size:14px;
+}
+
+.confidence{
+    display:inline-block;
+    padding:10px 22px;
+    border-radius:999px;
+    background:#f1f8f2;
+    border:1px solid #dcefdc;
+    color:#2e7d32;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+.description{
+    margin-top:15px;
+    line-height:1.8;
+    color:#555;
+    font-size:15px;
+}
+
+/* =========================
+   DIVIDER
+========================= */
+.divider{
+    border:none;
+    border-top:1px solid #e6f0e7;
+    margin:25px 0;
+}
+
+/* =========================
+   INFORMASI KATEGORI
+========================= */
+.info-section{
+    text-align:left;
+}
+
+.info-section h3{
+    color:#2e7d32;
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+.ciri-list{
+    list-style:none;
+}
+
+.ciri-list li{
+    background:#f1f8f2;
+    border:1px solid #dcefdc;
+    padding:12px 15px;
+    border-radius:12px;
+    margin-bottom:10px;
+    color:#444;
+}
+
+/* =========================
+   DATA KAMUS
+========================= */
+.kamus-section{
+    margin-top:30px;
+    padding-top:25px;
+    border-top:1px solid #e6f0e7;
+}
+
+.kamus-section h3{
+    color:#2e7d32;
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.jumlah-data{
+    color:#666;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+/* =========================
+   BUTTON LIHAT SEMUA
+========================= */
+.lihat-semua{
+    margin-top:20px;
+}
+
+.btn-lihat{
+    display:inline-block;
+    padding:12px 22px;
+    background:#2e7d32;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-lihat:hover{
+    background:#256628;
+    transform:translateY(-2px);
+}
+
+/* =========================
+   BUTTON GROUP
+========================= */
+.button-group{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+    justify-content: center;
+}
+
+.button-group a {
+    display: inline-block;
+    width: auto;          /* penting: jangan full */
+    padding: 10px 20px;   /* kecilin / sesuaikan */
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary, 
+.btn-secondary{
+    flex:1;
+    padding:14px;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#4caf50;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#388e3c;
+}
+
+.btn-secondary{
+    background:#e8f5e9;
+    color:#2e7d32;
+}
+
+.btn-secondary:hover{
+    background:#d7ecd8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:576px){
+
+    .card{
+        padding:25px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .prediction{
+        font-size:22px;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+}

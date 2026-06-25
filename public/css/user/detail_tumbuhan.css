@@ -1,0 +1,344 @@
+/* =========================================================
+   RESET
+========================================================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4faf4;
+    color:#333;
+    line-height:1.6;
+    padding:40px 20px;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+.container{
+    max-width:950px;
+    margin:auto;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+.card{
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+.page-title{
+    text-align:center;
+
+    color:#2e7d32;
+
+    font-size:28px;
+    font-weight:700;
+
+    margin-bottom:30px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.header{
+    display:flex;
+    align-items:center;
+
+    gap:30px;
+
+    margin-bottom:30px;
+    padding-bottom:28px;
+
+    border-bottom:1px solid #edf2ef;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+.image{
+    flex-shrink:0;
+}
+
+.image img{
+    width:240px;
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    border:3px solid #e8f5e9;
+
+    box-shadow:
+        0 6px 18px rgba(0,0,0,0.08);
+}
+
+.no-image{
+    width:200px;
+    height:200px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:2px dashed #cbd5e1;
+    border-radius:12px;
+
+    background:#f8fafc;
+
+    color:#94a3b8;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* =========================================================
+   TITLE BOX
+========================================================= */
+.title-box{
+    flex:1;
+}
+
+/* NAMA TUMBUHAN */
+.title-box h2{
+    color:#2e7d32;
+
+    font-size:30px;
+    font-weight:700;
+
+    line-height:1.3;
+
+    margin-bottom:10px;
+}
+
+/* NAMA LATIN */
+.latin{
+    color:#666;
+
+    font-size:16px;
+
+    margin-bottom:16px;
+}
+
+/* =========================================================
+   BADGE
+========================================================= */
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.badge.monokotil{
+    background:#dcfce7;
+    color:#166534;
+}
+
+.badge.dikotil{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+.content{
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+/* =========================================================
+   SECTION
+========================================================= */
+.section{
+    background:#f9fff9;
+
+    padding:22px;
+
+    border-radius:20px;
+
+    border:1px solid #e8f5e9;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+.label{
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#2e7d32;
+
+    font-size:15px;
+    font-weight:600;
+}
+
+/* =========================================================
+   TEXT
+========================================================= */
+.text{
+    color:#444;
+
+    font-size:15px;
+    line-height:1.8;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+.description{
+    color:#444;
+
+    font-size:15px;
+    line-height:1.8;
+
+    text-align:justify;
+}
+
+/* =========================================================
+   MAP
+========================================================= */
+iframe{
+    width:100%;
+
+    margin-top:10px;
+
+    border:none;
+    border-radius:16px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* =========================================================
+   BOTTOM ACTION
+========================================================= */
+.bottom-action{
+    margin-top:30px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+.btn-back{
+    display:inline-block;
+
+    width:auto;
+
+    padding:10px 26px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    background:#f1f8f2;
+    color:#2e7d32;
+
+    font-size:14px;
+    font-weight:500;
+
+    transition:0.2s;
+}
+
+.btn-back:hover{
+    background:#e0f2e3;
+}
+
+/* =========================================================
+   RESPONSIVE TABLET
+========================================================= */
+@media(max-width:768px){
+
+    body{
+        padding:20px 15px;
+    }
+
+    .card{
+        padding:24px;
+    }
+
+    .page-title{
+        font-size:26px;
+    }
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .image img{
+        width:100%;
+        max-width:280px;
+        height:auto;
+    }
+
+    .title-box h2{
+        font-size:26px;
+    }
+
+    .latin{
+        font-size:15px;
+    }
+
+    .section{
+        padding:20px;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+@media(max-width:576px){
+
+    .card{
+        padding:18px;
+    }
+
+    .page-title{
+        font-size:24px;
+    }
+
+    .title-box h2{
+        font-size:22px;
+    }
+
+    .latin{
+        font-size:14px;
+    }
+
+    .section{
+        padding:16px;
+        border-radius:16px;
+    }
+
+    .description,
+    .text{
+        font-size:14px;
+    }
+
+    .btn-back{
+        width:100%;
+        text-align:center;
+    }
+}

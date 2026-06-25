@@ -1,0 +1,244 @@
+/* =========================================================
+   RESET
+========================================================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+body{
+    background: #f4fff5;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    color: #333;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+.card{
+    background: #fff;
+    width: 100%;
+    max-width: 720px;
+
+    padding: 40px;
+    border-radius: 24px;
+
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+h1{
+    color: #2e7d32;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+.subtitle{
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* =========================================================
+   INFO BOX
+========================================================= */
+.info-box{
+    text-align: left;
+
+    background: #f5fbf5;
+    border: 1px solid #dceedd;
+
+    padding: 16px;
+    border-radius: 16px;
+
+    margin-bottom: 20px;
+}
+
+.info-box h3{
+    font-size: 14px;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.info-box ul{
+    padding-left: 18px;
+}
+
+.info-box li{
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+.form-group{
+    text-align: left;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* =========================================================
+   SELECT
+========================================================= */
+select{
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+
+    font-size: 14px;
+    background: #fff;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+select:focus{
+    border-color: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76,175,80,0.15);
+}
+
+/* =========================================================
+   BUTTON AREA
+========================================================= */
+.form-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 16px;
+    margin-top: 10px;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.submit-btn,
+.btn-back{
+    padding: 12px 22px;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Tombol Identifikasi */
+.submit-btn{
+    background: #4caf50;
+    color: white;
+}
+
+.submit-btn:hover{
+    background: #388e3c;
+}
+
+/* Tombol Kembali */
+.btn-back{
+    background: #eef8ef;
+    color: #2e7d32;
+}
+
+.btn-back:hover{
+    background: #dff0e0;
+}
+
+.custom-alert{
+    display: none;
+
+    background: #fff8e1;
+    color: #e65100;
+
+    border: 1px solid #ffcc80;
+    border-left: 5px solid #ff9800;
+
+    padding: 12px 15px;
+    border-radius: 12px;
+
+    margin-bottom: 16px;
+
+    font-size: 14px;
+    text-align: left;
+
+    animation: fadeIn .3s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 600px){
+
+    .card{
+        padding: 24px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .form-actions{
+        flex-direction: column;
+    }
+
+    .submit-btn,
+    .btn-back{
+        width: 100%;
+    }
+}

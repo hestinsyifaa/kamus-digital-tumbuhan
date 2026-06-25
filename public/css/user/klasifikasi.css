@@ -1,0 +1,197 @@
+/* =========================================================
+   RESET
+========================================================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+body{
+    font-family:'Poppins', sans-serif;
+    background:#f4faf4;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+.container{
+    min-height:calc(100vh - 80px);
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:40px 20px;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.header{
+    margin-bottom:35px;
+    text-align:center;
+}
+
+/* TITLE */
+.header h2{
+    color:#2e7d32;
+    font-size:32px;
+    font-weight:700;
+
+    margin-bottom:8px;
+}
+
+/* SUBTITLE */
+.subtitle{
+    color:#666;
+    font-size:15px;
+    line-height:1.6;
+
+    margin-bottom:0;
+}
+
+/* =========================================================
+   MENU
+========================================================= */
+.menu{
+    display:flex;
+    justify-content:center;
+
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+.card{
+    width:300px;
+
+    background:#fff;
+
+    padding:35px 30px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 8px 24px rgba(0,0,0,0.06);
+
+    transition:0.3s;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+.icon{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+.card h2{
+    color:#2e7d32;
+
+    font-size:24px;
+    font-weight:600;
+
+    margin-bottom:12px;
+}
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+.card p{
+    color:#666;
+
+    font-size:15px;
+    line-height:1.7;
+
+    margin-bottom:22px;
+
+    min-height:52px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+.btn{
+    display:inline-block;
+
+    margin-top:auto;
+
+    background:#4caf50;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 24px;
+
+    border-radius:12px;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#388e3c;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media(max-width:768px){
+
+    .container{
+        padding:30px 18px;
+    }
+
+    .header h2{
+        font-size:26px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .menu{
+        gap:20px;
+    }
+
+    .card{
+        width:100%;
+        max-width:350px;
+
+        padding:30px 24px;
+    }
+
+    .card h2{
+        font-size:22px;
+    }
+
+    .card p{
+        min-height:auto;
+    }
+
+}

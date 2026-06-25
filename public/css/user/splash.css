@@ -1,0 +1,140 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:#f4fff5;
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+.splash-container{
+    text-align:center;
+    animation:fadeIn 1s ease;
+    padding:20px;
+}
+
+/* =========================================================
+   LOGO
+========================================================= */
+.logo{
+    font-size:90px;
+    margin-bottom:16px;
+
+    animation:float 2s ease-in-out infinite;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+.title{
+    color:#2e7d32;
+
+    font-size:34px;
+    font-weight:700;
+
+    line-height:1.4;
+
+    margin-bottom:10px;
+}
+
+/* =========================================================
+   SUBTITLE
+========================================================= */
+.subtitle{
+    color:#666;
+
+    font-size:15px;
+
+    margin-bottom:28px;
+}
+
+/* =========================================================
+   LOADER
+========================================================= */
+.loader{
+    width:46px;
+    height:46px;
+
+    margin:0 auto;
+
+    border:4px solid #c8e6c9;
+    border-top:4px solid #4caf50;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width:576px){
+
+    .logo{
+        font-size:72px;
+    }
+
+    .title{
+        font-size:26px;
+    }
+
+    .subtitle{
+        font-size:14px;
+    }
+
+    .loader{
+        width:40px;
+        height:40px;
+    }
+}

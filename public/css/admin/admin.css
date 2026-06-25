@@ -1,0 +1,109 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+    background: #f4fff5;
+    color: #333;
+}
+
+/* WRAPPER */
+.wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+.sidebar {
+    width: 250px;
+    background: #2e7d32;
+    color: white;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar .logo {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+/* hover */
+.sidebar ul li a:hover {
+    background: rgba(255,255,255,0.15);
+    transform: translateX(3px);
+}
+
+/* active menu (kalau dipakai blade active) */
+.sidebar ul li a.active {
+    background: rgba(255,255,255,0.25);
+    font-weight: 600;
+}
+
+/* =========================
+   CONTENT
+========================= */
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f8fff9;
+}
+
+/* TITLE */
+.title {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar ul li a {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
